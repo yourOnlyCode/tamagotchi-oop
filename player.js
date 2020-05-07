@@ -1,3 +1,5 @@
+
+
 console.log('player file is loaded');
 
 class Player {
@@ -22,3 +24,7 @@ class Player {
 }
 
 const player = new Player('Neo');
+
+console.log(Player.feedTamagotchi(tamaObjOne))
+console.log(Player.medicateTamagotchi(tamaObjTwo))
+console.log(Player.knockOutTamagotchi(tamaObjThree))
