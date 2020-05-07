@@ -8,17 +8,20 @@ class Tamagotchi {
         this.health = 10
     }
 
-    cry () {
-        this.foodInTummy -= 1
-        console.log('WAHH!!!!')
+    cry() {
+        this.foodInTummy--
+        console.log('WAHH!!!!' + ' ' + `...${Tamagotchi} cries.`)
+        console.log('Current food: ' + this.foodInTummy)
     }
 }
 
 
 //create new Tamagotchis
 const loli = new Tamagotchi()
-
 const peopi = new Tamagotchi()
 
 
 //test out your Tamagotchies below via console.logs
+
+console.log('loli:', loli)
+console.log('peopi:', peopi)
