@@ -59,7 +59,3 @@ const tamaObjFour = new Tamagotchi(10, 10, 10, 'flap', 'bird')
 // console.log(`${tamaObjTwo.name}`, tamaObjTwo.cry())
 // console.log(`${tamaObjThree.name}`, tamaObjThree.cry())
 // console.log(`${tamaObjFour.name}`, tamaObjFour.cry())
-
-tamaObjFour.hungerTimer()
-tamaObjFour.yawnTimer()
-tamaObjFour.sickTimer()
