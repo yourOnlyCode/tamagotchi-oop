@@ -26,6 +26,18 @@ class Tamagotchi {
         this.restedness--
         console.log(`${this.name}'s current restedness is: ` + this.restedness)
     }
+
+    hungerTimer() {
+        setInterval(this.cry, 6000)
+    }
+
+    yawnTimer() {
+        setInterval(this.yawn, 10000)
+    }
+
+    sickTimer() {
+        setInterval(this.puke, 20000)
+    }
 }
 
 
@@ -38,12 +50,16 @@ const tamaObjFour = new Tamagotchi(10, 10, 10, 'flap', 'bird')
 
 //test out your Tamagotchies below via console.logs
 
-console.log(`${tamaObjOne.name}`, tamaObjOne)
-console.log(`${tamaObjTwo.name}`, tamaObjTwo)
-console.log(`${tamaObjThree.name}`, tamaObjThree)
-console.log(`${tamaObjFour.name}`, tamaObjFour)
+// console.log(`${tamaObjOne.name}`, tamaObjOne)
+// console.log(`${tamaObjTwo.name}`, tamaObjTwo)
+// console.log(`${tamaObjThree.name}`, tamaObjThree)
+// console.log(`${tamaObjFour.name}`, tamaObjFour)
 
-console.log(`${tamaObjOne.name}`, tamaObjOne.cry())
-console.log(`${tamaObjTwo.name}`, tamaObjTwo.cry())
-console.log(`${tamaObjThree.name}`, tamaObjThree.cry())
-console.log(`${tamaObjFour.name}`, tamaObjFour.cry())
+// console.log(`${tamaObjOne.name}`, tamaObjOne.cry())
+// console.log(`${tamaObjTwo.name}`, tamaObjTwo.cry())
+// console.log(`${tamaObjThree.name}`, tamaObjThree.cry())
+// console.log(`${tamaObjFour.name}`, tamaObjFour.cry())
+
+tamaObjFour.hungerTimer()
+tamaObjFour.yawnTimer()
+tamaObjFour.sickTimer()
